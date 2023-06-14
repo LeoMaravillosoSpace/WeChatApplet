@@ -1,0 +1,108 @@
+.container {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .container > .title {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+  
+  button {
+    width: 100%;
+    max-width: 400px;
+    height: 60px;
+    line-height: 60px;
+    margin: 30px auto;
+    border-radius: 4px;
+    background-color: #ff9900;
+    color: #fff;
+    font-size: 24px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease-out;
+  }
+  
+  button:hover {
+    background-color: #ffae32;
+  }
+  
+  .section {
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 40px;
+    overflow: hidden;
+  }
+  
+  .section > .title {
+    width: 30%;
+    float: left;
+    font-size: 24px;
+    text-align: right;
+    line-height: 42px;
+    margin-right: 20px;
+    color: #666;
+  }
+  
+  .section > .input {
+    border: 1px solid #ccc;
+    width: 70%;
+    padding: 10px 12px;
+    float: left;
+    font-size: 24px;
+    border-radius: 4px;
+    color: #333;
+  }
+  
+  .orderlist {
+    margin-top: 40px;
+  }
+  
+  .orderlist .title {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .orderlist .item {
+    border-bottom: 1px solid #eee;
+    padding: 20px 0;
+  }
+  
+  .orderlist .item:last-child {
+    border-bottom: none;
+  }
+  
+  .orderlist .item .status {
+    color: #ff9900;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .orderlist .item .remark {
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  .orderlist .item .time {
+    color: #999;
+    font-size: 16px;
+  }
+  
+  @media (max-width: 768px) {
+    .section > .title {
+      width: 100%;
+      float: none;
+      text-align: left;
+      margin-right: 0;
+    }
+  
+    .section > .input {
+      width: 100%;
+      float: none;
+    }
+  }
+  

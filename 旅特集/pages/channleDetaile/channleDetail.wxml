@@ -1,0 +1,15 @@
+
+<view class="content">
+  <view class="albumbox">
+    <block wx:for="{{searchList}}"wx:key="*this" wx:if="{{item.imgsrc}}" >
+        <block wx:if="{{item.url!=''}}">
+            <view class="albumlist" bindtap="gotoDetail" data-obj="{{item}}">
+            <image src="{{item.imgsrc}}" mode="aspectFill" class="imgshow"/>
+            <view class="albumname">{{item.title}}</view>
+            <view class="endtext">{{item.source}}</view>
+            <view class="endtext">{{item.ptime}}</view>
+        </view>
+        </block>
+    </block>
+  </view>
+</view>

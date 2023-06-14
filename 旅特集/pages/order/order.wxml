@@ -1,0 +1,17 @@
+<!-- YT7226186418929 -->
+<view class="container">
+  <view class="title">欢迎进入快递查询系统</view>
+  <view class="section">
+    <view class="title">运单号：</view>
+    <input class="input" type="number" bindinput="noInput" placeholder="请输入运单号" />
+  </view>
+  <button type="primary" bindtap="search">查询</button>
+  <scroll-view scroll-y class="orderlist">
+    <view class="title">物流信息：</view>
+    <view wx:for="{{result}}" wx:key="index" class="item">
+      <text class="status">{{item.context}}</text>
+      <text class="remark">{{item.remark}}</text>
+      <text class="time">{{item.time}}</text>
+    </view>
+  </scroll-view>
+</view>

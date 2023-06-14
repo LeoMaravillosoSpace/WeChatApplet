@@ -1,0 +1,14 @@
+<view class="container">
+  <view class="title">{{newsList.title}}</view>
+  
+  <view class="info">
+    <view class="source">{{newsList.source}}</view>
+    <view class="date">{{newsList.ptime}}</view>
+  </view>
+  
+  <image src="{{newsList.imgsrc}}" mode=""/>
+  
+  <view class="content">
+    {{content}}
+  </view>
+</view>

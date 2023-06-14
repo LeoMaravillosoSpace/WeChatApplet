@@ -1,0 +1,111 @@
+<!-- 轮播图 -->
+<swiper
+  class="content-info-slide"
+  indicator-color="white"
+  indicator-active-color="#ff4c91"
+  indicator-dots
+  circular
+  autoplay
+>
+  <swiper-item wx:for="{{imgUrls}}" wx:key="*this">
+    <image src="{{item.url}}" mode="aspectFill" class="slide-image" />
+    <view class="swiper-item-desc">{{item.desc}}</view>
+  </swiper-item>
+</swiper>
+<!-- 按钮功能1 -->
+<view class="content-info-portal">
+  <block wx:for="{{portalItems[0]}}" wx:key="index">
+    <view>
+      <!-- <image src="{{item.url}}" bindtap="ToChannel" data-channal="{{item.text}}  mode=""/> -->
+      <image src="{{item.url}}" bindtap="ToChannel" data-channal="{{item.text}}" ></image>
+      <text>{{item.text}}</text>
+    </view>
+  </block>
+</view>
+<!-- 按钮功能2 -->
+<view class="content-info-portal">
+  <block wx:for="{{portalItems[1]}}" wx:key="index">
+    <view>
+      <image src="{{item.url}}" bindtap="ToChannel" data-channal="{{item.text}}" mode=""/>
+      <text>{{item.text}}</text>
+    </view>
+  </block>
+</view>
+  <!-- 热门推荐 -->
+  <view class="content-info-list">
+    <view class="zi" style="display: flex; align-items: center;">
+  <!-- <image src="/images/3-1.png" mode="" style="margin-right: 10px;" /> -->
+  <!-- <view style="position: relative;">
+    <text style="position: absolute; top: -14px; left: 30px; padding: 6px 10px; background: linear-gradient(to left, #FFC107, #FF9800); color: #fff; font-size: 16px; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; box-shadow: 0 10px 20px rgba(255, 152, 0, 0.3); border-radius: 20px;">HOT</text>
+    <view style="position: absolute; top: -5px; left: 28px; width: 0; height: 0; border-top: 10px solid transparent; border-bottom: 10px solid transparent; border-right: 10px solid #FFC107; transform: rotate(-45deg);"></view>
+  </view> -->
+  <div class="hot-tag">
+  <div class="hot-tag-icon"></div>
+  <div class="hot-tag-text">HOT</div>
+</div>
+</view>
+
+  <!-- 热门推荐内容 -->
+  <view class="schoollist">
+  <block wx:for="{{items}}" wx:key="item">
+    <view class="school-list">
+      <navigator url="/pages/photo/photo?id={{item.id}}">
+        <view class="school-list-info" index="{{index}}">
+          <image class="school-list-photo" src="{{item.imageUrl}}" bindtap="goto"/>
+          <text class="school-list-desc">{{item.content}}</text>
+        </view>
+      </navigator>
+    </view>
+  </block>
+</view>
+<!-- 更多 -->
+<view class="more-link">
+  <text bindtap="more">查看更多</text>
+  <view class="arrow"></view>
+</view>
+<!-- 热门推荐 2-->
+<view class="content-info-list">
+  <view class="zi">
+ <!-- <image src="/images/sushe.png" />    -->
+ <!-- <image src="/images/4-1.png" mode=""/> -->
+ <div class="hotel-tag">
+  <div class="hotel-tag-icon"></div>
+  <div class="hotel-tag-text">酒店推荐</div>
+</div>
+  </view>
+</view>
+ <!-- 热门推荐内容2 -->
+<view class='list'>
+  <block wx:for='{{dataList}}' wx:key='list' wx:for-item="item">
+  <view class="list_item">
+      <navigator url='details?id={{item.goods_id}}'>
+      <view class='img'>
+        <image src="{{imghref}}{{item.goods_img}}"  mode="scaleToFill"/>
+      </view>
+      <view class='info'>
+        <view class='title'>{{item.goods_title}}</view>
+        <view class='price'>￥{{item.goods_price}}</view>
+        <view class='num'>推荐理由：{{item.goods_xiaoliang}}</view>
+      </view>
+       </navigator>
+      <view class='clear'></view>
+  </view>
+  </block>
+</view>
+<!-- 更多 -->
+<!-- <view class='weui-navigation-bar__center'>
+     <text bindtap="more">查看更多 -></text>
+     </view> -->
+  <view class="more-link">
+  <text bindtap="more">查看更多</text>
+  <view class="arrow"></view>
+</view>
+<!-- 底部 -->
+<view class="page__bd page__bd_spacing">
+  <view class="weui-footer">
+    <view class="weui-footer__text">{{footerText}}</view>
+  </view>
+</view>
+
+ </view> 
+

@@ -1,0 +1,11 @@
+<view class="container">
+  <view class="header">常用联系人</view>
+  <view class="list">
+    <view class="item" wx:for="{{contacts}}" wx:key="{{index}}" data-contactId="{{item._id}}" bindtap="editContact" data-obj="{{item}}">
+      <view class="name">姓名：{{item.name}}</view>
+      <view class="phone">电话：{{item.phone}}</view>
+      <view class="address">地址：{{item.address}}</view>
+    </view>
+  </view>
+  <button class="add-btn" bindtap="addContact">添加联系人</button>
+</view>

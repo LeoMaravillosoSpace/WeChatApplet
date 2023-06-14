@@ -1,0 +1,26 @@
+
+<view class="container">
+  <!-- 输入框 -->
+  <form class="login-form" bindsubmit="onSubmit">
+    <view class="form-item">
+      <!-- <image src="user-icon.png" class="input-icon"></image> -->
+      <input class="input" name="username" type="text" placeholder="请输入用户名" />
+    </view>
+    <view class="form-item">
+      <!-- <image src="password-icon.png" class="input-icon"></image> -->
+      <input class="input" name="password" type="password" placeholder="请输入密码" />
+    </view>
+    <!-- <button class="btn" formType="submit">登录</button> -->
+    <button class="btn" type="submit" size="{{primarySize}}"loading="{{loading}}" plain="{{plain}}" disabled="{{disabled}}"bindtap="login">登录</button>
+    <view class="tips">
+      <navigator class="forget" url="/pages/forget-password/forget-password">忘记密码？</navigator>
+      <navigator class="register" url="/pages/register/register">新用户注册</navigator>
+    </view>
+  </form>
+  <!-- 微信登录 -->
+  <button class="wx-login-btn" open-type="getUserInfo" bindgetuserinfo="onGetUserInfo">
+    <!-- <button type="primary" open-type="getUserInfo" bindgetuserinfo="onGetUserInfo">点击授权</button> -->
+    <image class="wx-login-icon" src="cloud://cloud1-9gdlbrz28af5b0cb.636c-cloud1-9gdlbrz28af5b0cb-1317411326/images/wechat.png" open-type="getUserInfo" bindgetuserinfo="onGetUserInfo"></image>
+    <!-- <text class="wx-login-text">微信登录</text> -->
+  </button>
+</view>

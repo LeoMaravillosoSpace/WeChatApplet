@@ -1,0 +1,28 @@
+.container {
+  padding: 20rpx;
+}
+
+.input {
+  width: 100%;
+  margin-bottom: 20rpx;
+  padding: 10rpx;
+  font-size: 28rpx;
+  border: 1rpx solid #ccc;
+  border-radius: 10rpx;
+}
+
+.save-btn {
+  width: 100%;
+  background-color: #007aff;
+  color: #fff;
+  border-radius: 10rpx;
+  padding: 20rpx;
+  font-size: 28rpx;
+  text-align: center;
+  box-shadow: 0 5rpx 10rpx rgba(0, 0, 0, 0.2);
+}
+
+.save-btn:active {
+  background-color: #0062cc;
+  box-shadow: none;
+}

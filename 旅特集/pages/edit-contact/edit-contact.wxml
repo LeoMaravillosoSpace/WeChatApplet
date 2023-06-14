@@ -1,0 +1,6 @@
+<view class="container">
+  <input class="input" placeholder="请输入姓名" bindinput="inputName" value="{{contact.name}}" />
+  <input class="input" placeholder="请输入电话" bindinput="inputPhone" value="{{contact.phone}}" />
+  <input class="input" placeholder="请输入地址" bindinput="inputAddress" value="{{contact.address}}" />
+  <button class="save-btn" bindtap="saveContact">保存</button>
+</view>

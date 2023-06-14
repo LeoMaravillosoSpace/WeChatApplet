@@ -1,0 +1,53 @@
+<!-- 结算页面 -->
+<view class="order-title">
+  <view class="left">
+    <text class="font-color-333" style="margin-left:5px;">订单号：{{orderId}}</text>
+  </view>
+  <view class="right">
+    <text class="font-color-999" style="margin-left:10rpx;">{{order.create_time}}</text>
+  </view>
+</view>
+
+<view class="order-group">
+  <view class="group-hd" style="padding-left:5px">商品</view>
+  <view class="goodslist">
+    <block wx:for="{{goodslist}}">
+      <view class="goods">
+        <view>
+          <image src="{{item.imgUrl}}" class="good-img" />
+        </view>
+        <view class="good-cont">
+          <view class="goods-navigator">
+            <text class="good-name">{{item.name}}</text>
+          </view>
+          <view class="good-price">
+            <text>￥{{item.price}}</text>
+            <text class="cart">{{item.count}}</text>
+          </view>
+        </view>
+      </view>
+    </block>
+  </view>
+  <view class="all">商品总额：<text style="color:#FF0033">￥{{total}}</text></view>
+</view>
+
+<view class="address-group arrow-right" bindtap="onCustomerAddressTap">
+  <view class="address-group-hd">
+    <text>客户地址</text>
+    <view class="la">></view>
+  </view>
+</view>
+
+<view class="order-group">
+  <view class="group-hd line-before-bottom" style="margin-left:5px;">备注信息</view>
+  <view class="weui-cell__bd">
+    <textarea class="weui-textarea" placeholder="请在此填写备注信息" style="height: 3.3em" />
+    <view class="weui-textarea-counter" style="margin-left:5px; color:#cccccc">0/200</view>
+  </view>
+</view>
+
+<view style="width:100%;height:140rpx;"></view>
+
+<view class="fixed-ft foot-box">
+  <button class="pay-box font-color-white" bindtap="wxPay">微信支付</button>
+</view>

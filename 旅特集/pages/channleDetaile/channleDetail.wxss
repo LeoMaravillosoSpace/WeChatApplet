@@ -1,0 +1,35 @@
+/* pages/home/home.wxss */
+.content{
+    width: 720rpx;
+    margin: 0 auto;
+  }
+  /* .content .title{
+    line-height: 80rpx;
+    font-size: 40rpx;
+    color: #2b2a2a;
+    margin-bottom: 10rpx;
+    text-align: center;
+  } */
+  .albumbox{
+    column-count: 2;
+    column-gap: 15rpx;
+  
+  }
+  .albumlist{
+    margin-bottom: 15rpx;
+    break-inside: avoid;
+  }
+  .albumlist .imgshow{
+    width: 100%;
+    border-radius: 15rpx;
+  }
+  .albumlist .albumname{
+    font-size: 34rpx;
+    color: #333333;
+    line-height: 60rpx;
+  }
+
+  .endtext{
+    font-size: 30rpx;
+    color: #9e9e9e;
+  }

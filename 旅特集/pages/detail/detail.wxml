@@ -1,0 +1,142 @@
+<!--导航条-->
+<view class="navbar">
+  <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap">{{item}}</text>
+</view>
+ 
+<!--首页-->
+<view hidden="{{currentTab!==0}}">
+  <!-- tab_01 -->
+  
+<view class='list' >
+ 
+   <!--list-->
+   <view class="goodslist">
+    <!--item-->
+    <block wx:for="{{goodslist}}">
+      <view class="goods" >
+        <!--左侧图片盒子-->
+        <view>
+          <image src="{{item.imgUrl}}" class="good-img" bindtap="goto"/>
+        </view>
+        <!--右侧说明部分-->
+        <view class="good-cont">
+          <!--上--文字说明-->
+          <view class="goods-navigator">
+            <text class="good-name">{{item.name}}</text>
+          </view>
+           <!--下--文字和图片说明-->
+           <view class="goods-prices">
+          <view class="goods-price">
+            <text class='num'>销量：{{item.goods_xiaoliang}}</text>
+            <text class="price">￥{{item.price}}</text>
+          </view>
+          <!--价格部分-->
+          <view class="good-price">
+            <image id="{{item.id}}" class="cart" src="cloud://cloud1-9gdlbrz28af5b0cb.636c-cloud1-9gdlbrz28af5b0cb-1317411326/images/cart (2).png" bindtap="addcart" />
+          </view>
+          </view>
+        </view>
+      </view>
+    </block>
+  </view>
+  
+  <view class="seemore" bindtap="more">查看更多</view>
+</view>
+   <!-- tab_01 -->
+</view>
+ 
+<!--搜索-->
+<view hidden="{{currentTab!==1}}">
+  <!-- tab_02 -->
+  <view class="SearchBox">
+
+<view class="Search_input_top_box">
+
+<view class="Search_ico_box">
+
+<image class="Search_ico" src="cloud://cloud1-9gdlbrz28af5b0cb.636c-cloud1-9gdlbrz28af5b0cb-1317411326/images/ath.png"></image>
+
+</view>
+
+<input class="Search_Input" focus="{{name_focus}}" placeholder='请输入景区名称进行搜索' bindinput='inputvalue' value="{{input_value}}"></input>
+
+<view class="Search_btn" bindtap='search' >{{SearchText}}</view>
+
+</view>
+
+<view class="Search_xian"></view>
+
+<!--搜索记录盒子-->
+
+<view class="Search_record_box">
+
+<view class="Search_record_text">
+
+<text>搜索记录</text>
+
+<image bindtap='delete_list' src='cloud://cloud1-9gdlbrz28af5b0cb.636c-cloud1-9gdlbrz28af5b0cb-1317411326/images/shanchu.png'></image>
+
+</view>
+
+<!--记录词的盒子-->
+
+<view class="History_box">
+
+<view class="History-list">
+
+<text wx:for="{{listarr}}" data-text="{{item}}" wx:key="key" bindtap='this_value'>{{item}}</text>
+
+</view>
+
+</view>
+
+</view>
+
+<!--热门搜索盒子-->
+
+<view class="hot_box">
+
+<view class="hot_box_text">
+
+<text>热门搜索</text>
+
+</view>
+
+<!--热门词的盒子-->
+
+<view class="History_box">
+
+<view class="History-list">
+
+<text>超级人体弹弓</text>
+<text>旱雪娱乐</text>
+<text>蹦蹦云及月球漫步</text>
+<text>彩虹滑道升级版-弯曲滑道和浪摆滑道</text>
+<text>三月节</text>
+
+</view>
+
+</view>
+
+</view>
+
+</view>
+  <!-- tab_02 -->
+</view>
+ 
+<!--我-->
+<view hidden="{{currentTab!==2}}">
+  <!-- tab_03 -->
+ 
+  <view class='grid-item-container'>
+  <block wx:for="{{iconStyle}}" wx:key="index">
+    <view class='grid-item-child'>
+      <view>
+        <icon class='grid-item-icon' type='{{item.type}}' size='{{item.size}}' color='{{item.color}}'/>
+        <text class='grid-item-label'>{{item.type}}</text>
+      </view>
+    </view>
+  </block>
+</view>
+   <!-- tab_03-->
+</view>

@@ -1,0 +1,65 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/index/index",
+    "pages/detail/detail",
+    "pages/shopping/shopping",
+    "pages/person/person",
+    "pages/cart/cart",
+    "pages/myorder/myorder",
+    "pages/order/order",
+    "pages/settlement/settlement",
+    "pages/util/util.js",
+    "pages/channleDetaile/channleDetail",
+    "pages/linkman/linkman",
+    "pages/edit-contact/edit-contact",
+    "pages/channleDetaileMore/channleDetaileMore"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#5495e6",
+    "navigationBarTitleText": "旅特集",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#333",
+    "selectedColor": "#f7982a",
+    "backgroundColor": "#f6f6f6",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/index.png",
+        "selectedIconPath": "images/index-1.png"
+      },
+      {
+        "pagePath": "pages/detail/detail",
+        "text": "热门",
+        "iconPath": "images/remen_1.png",
+        "selectedIconPath": "images/remen.png"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "text": "购物车",
+        "iconPath": "images/cart-2.png",
+        "selectedIconPath": "images/cart.png"
+      },
+      {
+        "pagePath": "pages/person/person",
+        "text": "我的",
+        "iconPath": "images/wode.png",
+        "selectedIconPath": "images/wode-1.png"
+      }
+    ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    },
+    "scope.userInfo": {
+      "desc": "获取您的用户信息用于登录"
+    }
+  },  
+  "sitemapLocation": "sitemap.json"
+}

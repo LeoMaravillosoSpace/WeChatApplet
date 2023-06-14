@@ -1,0 +1,114 @@
+.amountBg{
+  height: 100px;
+  background-color: #5495e6;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+ 
+}
+.img{
+  margin-left: 10px;
+}
+.account{
+  width:80%;
+  color: #ffffff;
+  margin-left: 6px;
+}
+.nav{
+  
+  color: #ffffff;
+  margin-right: 10px;
+}
+
+.content{
+  background-color: #F4F4F4;
+  height: 500px;
+
+}
+.order{
+  width: 94%;
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  background-color: #ffffff;
+  border-radius: 5px;
+  text-align: center;
+  align-items: center;
+  position: absolute;
+  top: 90px;
+  margin-left: 3%;
+}
+.desc{
+  width: 25%;
+  font-size: 13px;
+}
+.clear{
+  padding-top: 70px;
+}
+.item{
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+  align-items: center;
+
+}
+.icon{
+ margin-left: 15px;
+  text-align: center;
+
+}
+.itemName{
+  margin-left: 15px;
+  width: 40%;
+  font-size: 13px;
+  /* font-weight: bold; */
+
+}
+
+.line{
+  height: 10px;
+}
+.hr{
+  height: 1px;
+  background-color: #cccccc;
+  opacity: 0.2;
+}
+.right{
+  width: 40%;
+  text-align: right;
+  color: #cccccc;
+  font-size: 12px;
+}
+.fuhao{
+  margin-left: 10px;
+  margin-right: 10px;
+  color: #cccccc;
+}
+
+.bottom_1{
+  font-size: 12px;
+  color: #cccccc;
+  text-align: center;
+  margin-top: 20px;
+}
+.bottom_2{
+  font-size: 8px;
+  text-align: center;
+  margin-top: 5px;
+  color: #cccccc;
+}
+/* 按钮 */
+.loginBtnView { 
+  width: 100%; 
+  height: auto; 
+  background-color: #f2f2f2; 
+  margin-top: 0px; 
+  margin-bottom: 0px; 
+  padding-bottom: 0px; 
+} 
+ 
+.loginBtn { 
+  width: 80%; 
+  margin-top: -20px; 
+}

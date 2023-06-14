@@ -1,0 +1,21 @@
+<block wx:for="{{shoppingData}}">
+  <div class="card">
+    <div class="header">
+      <div class="title">{{item.title}}</div>
+    </div>
+    <div class="item">
+      <div class="item_image">
+          <image src="{{item.imageUrl}}"class="image"></image>
+      </div>
+      <div class="item_detail">
+        <div class="info">
+          <span class="source">{{item.source}}</span>
+          <span class="date">{{item.ptime}}</span>
+        </div>
+        <div class="content">
+          {{item.content}}
+        </div>
+      </div>
+    </div>
+  </div>
+</block>

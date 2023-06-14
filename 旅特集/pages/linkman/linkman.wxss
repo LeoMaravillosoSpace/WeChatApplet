@@ -1,0 +1,49 @@
+.container {
+    padding: 20rpx;
+  }
+  
+  .header {
+    font-size: 32rpx;
+    font-weight: bold;
+    margin-bottom: 20rpx;
+  }
+  
+  .list {
+    border: 1rpx solid #ccc;
+    border-radius: 10rpx;
+    padding: 20rpx;
+  }
+  
+  .item {
+    padding: 10rpx;
+    border-bottom: 1rpx solid #ccc;
+    width: 540rpx;
+  }
+  
+  .name {
+    font-size: 28rpx;
+    font-weight: bold;
+    margin-bottom: 10rpx;
+  }
+  
+  .phone, .address {
+    font-size: 24rpx;
+    margin-bottom: 5rpx;
+  }
+  
+  .add-btn {
+    margin-top: 20rpx;
+    width: 100%;
+    background-color: #007aff;
+    color: #fff;
+    border-radius: 10rpx;
+    padding: 20rpx;
+    font-size: 28rpx;
+    text-align: center;
+    box-shadow: 0 5rpx 10rpx rgba(0, 0, 0, 0.2);
+  }
+  
+  .add-btn:active {
+    background-color: #0062cc;
+    box-shadow: none;
+  }
